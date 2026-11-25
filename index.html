@@ -1,2 +1,138 @@
-# elysee-boutique
-pour mes ventes de produits sur le site 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELYSEE | Boutique</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101010;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 35px 15px;
+      background: #080808;
+      border-bottom: 2px solid #c9a34a;
+    }
+    header h1 {
+      color: #d7b45a;
+      letter-spacing: 8px;
+      font-size: 38px;
+    }
+    header p { color: #ddd; }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 18px;
+      background: #1b1b1b;
+    }
+    nav a {
+      color: #e0bd68;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+    }
+    .hero h2 {
+      color: #d7b45a;
+      font-size: 30px;
+    }
+    .hero p { line-height: 1.7; }
+    .btn {
+      display: inline-block;
+      background: #c9a34a;
+      color: #111;
+      padding: 13px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    section {
+      padding: 35px 20px;
+      text-align: center;
+    }
+    section h2 { color: #d7b45a; }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      max-width: 900px;
+      margin: 25px auto;
+    }
+    .category {
+      padding: 30px 15px;
+      border: 1px solid #c9a34a;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #080808;
+      color: #d7b45a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ELYSEE</h1>
+  <p>Élégance • Qualité • Excellence</p>
+</header>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#categories">Catégories</a>
+  <a href="#produits">Produits</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="accueil">
+  <h2>Bienvenue chez ELYSEE</h2>
+  <p>Découvrez un univers de beauté, de bien-être et de gourmandise.</p>
+  <a class="btn" href="#categories">Découvrir la boutique</a>
+</div>
+
+<section id="categories">
+  <h2>Nos catégories</h2>
+  <div class="categories">
+    <div class="category">
+      <h3>Beauté</h3>
+      <p>Découvrez notre univers beauté.</p>
+    </div>
+    <div class="category">
+      <h3>Santé</h3>
+      <p>Découvrez notre sélection bien-être.</p>
+    </div>
+    <div class="category">
+      <h3>Pâtisserie</h3>
+      <p>Un univers de gourmandises.</p>
+    </div>
+  </div>
+</section>
+
+<section id="produits">
+  <h2>Nos produits</h2>
+  <p>Notre catalogue arrive bientôt. Restez connectés !</p>
+</section>
+
+<section id="contact">
+  <h2>Contact et partenariats</h2>
+  <p>Vous êtes une marque ou souhaitez collaborer avec ELYSEE ?</p>
+  <p>Contactez-nous pour toute demande.</p>
+</section>
+
+<footer>
+  <p>© 2026 ELYSEE - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
