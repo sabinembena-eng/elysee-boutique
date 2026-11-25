@@ -4,83 +4,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELYSEE | Boutique</title>
+  <title>ELYSEE | Boutique & Gourmandises</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: Arial, sans-serif;
       background: #101010;
-      color: white;
+      color: #f5f0e5;
+      line-height: 1.6;
     }
+
     header {
+      background: #080808;
       text-align: center;
       padding: 35px 15px;
-      background: #080808;
-      border-bottom: 2px solid #c9a34a;
+      border-bottom: 2px solid #c9a64b;
     }
+
     header h1 {
-      color: #d7b45a;
-      letter-spacing: 8px;
-      font-size: 38px;
+      color: #d6b45b;
+      font-size: 42px;
+      letter-spacing: 7px;
     }
-    header p { color: #ddd; }
+
+    header p {
+      color: #eee0b5;
+      margin-top: 8px;
+    }
+
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
-      padding: 18px;
-      background: #1b1b1b;
+      gap: 22px;
+      padding: 17px 10px;
+      background: #171717;
     }
+
     nav a {
-      color: #e0bd68;
+      color: #d6b45b;
       text-decoration: none;
+      font-weight: bold;
     }
+
+    nav a:hover {
+      color: white;
+    }
+
     .hero {
       text-align: center;
       padding: 75px 20px;
+      background: linear-gradient(135deg, #171717, #302611);
     }
+
     .hero h2 {
-      color: #d7b45a;
-      font-size: 30px;
+      color: #e1c36d;
+      font-size: 32px;
+      margin-bottom: 15px;
     }
-    .hero p { line-height: 1.7; }
-    .btn {
-      display: inline-block;
-      background: #c9a34a;
-      color: #111;
-      padding: 13px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 15px;
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
     }
-    section {
-      padding: 35px 20px;
+
+    .section {
+      padding: 45px 7%;
+    }
+
+    .section h2 {
+      color: #d6b45b;
       text-align: center;
+      font-size: 27px;
+      margin-bottom: 12px;
     }
-    section h2 { color: #d7b45a; }
-    .categories {
+
+    .intro {
+      text-align: center;
+      color: #c7c0b2;
+      margin-bottom: 28px;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 18px;
-      max-width: 900px;
-      margin: 25px auto;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
     }
-    .category {
-      padding: 30px 15px;
-      border: 1px solid #c9a34a;
-      border-radius: 8px;
+
+    .card {
+      background: #1c1c1c;
+      border: 1px solid #806a34;
+      border-radius: 12px;
+      padding: 22px;
+      text-align: center;
+      transition: 0.3s;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #e1c36d;
+    }
+
+    .visual {
+      background: #292318;
+      border-radius: 9px;
+      min-height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #e1c36d;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .card p {
+      color: #d2ccbf;
+      font-size: 14px;
+    }
+
+    .price {
+      color: #e1c36d;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .contact {
+      background: #1b1b1b;
+      text-align: center;
+      padding: 45px 20px;
+      border-top: 1px solid #806a34;
+    }
+
+    .contact h2 {
+      color: #d6b45b;
+      margin-bottom: 12px;
+    }
+
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 20px;
+      color: #b9ad8c;
       background: #080808;
-      color: #d7b45a;
+      font-size: 13px;
+    }
+
+    @media(max-width: 600px) {
+      header h1 { font-size: 32px; }
+      .hero h2 { font-size: 25px; }
+      .section { padding: 35px 5%; }
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -90,48 +175,74 @@
 
 <nav>
   <a href="#accueil">Accueil</a>
-  <a href="#categories">Catégories</a>
-  <a href="#produits">Produits</a>
+  <a href="#beaute">Beauté</a>
+  <a href="#sante">Santé</a>
+  <a href="#patisserie">Gourmandises</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero" id="accueil">
+<section class="hero" id="accueil">
   <h2>Bienvenue chez ELYSEE</h2>
-  <p>Découvrez un univers de beauté, de bien-être et de gourmandise.</p>
-  <a class="btn" href="#categories">Découvrir la boutique</a>
-</div>
+  <p>
+    Découvrez un univers où beauté, bien-être et gourmandise
+    se rencontrent. Des produits sélectionnés et des créations
+    gourmandes pour vous faire plaisir.
+  </p>
+</section>
 
-<section id="categories">
-  <h2>Nos catégories</h2>
-  <div class="categories">
-    <div class="category">
-      <h3>Beauté</h3>
-      <p>Découvrez notre univers beauté.</p>
-    </div>
-    <div class="category">
-      <h3>Santé</h3>
-      <p>Découvrez notre sélection bien-être.</p>
-    </div>
-    <div class="category">
-      <h3>Pâtisserie</h3>
-      <p>Un univers de gourmandises.</p>
-    </div>
+<section class="section" id="beaute">
+  <h2>Beauté et soins</h2>
+  <p class="intro">Découvrez notre sélection de produits Longrich.</p>
+
+  <div class="grid">
+    <div class="card"><div class="visual">🌸</div><h3>Serviettes hygiéniques</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🧴</div><h3>Crème pour les mains</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🪥</div><h3>Dentifrice</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🪥</div><h3>Brosse à dents</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🧼</div><h3>Savon noir</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">✨</div><h3>Anti-transpirant</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🧴</div><h3>Snake Oil</h3><p>Huile de serpent Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🧴</div><h3>Produit au placenta</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">💧</div><h3>Multi Action Floral Water</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">👶</div><h3>Poudre pour bébé</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
   </div>
 </section>
 
-<section id="produits">
-  <h2>Nos produits</h2>
-  <p>Notre catalogue arrive bientôt. Restez connectés !</p>
+<section class="section" id="sante">
+  <h2>Santé et bien-être</h2>
+  <p class="intro">Retrouvez notre sélection Longrich.</p>
+
+  <div class="grid">
+    <div class="card"><div class="visual">🍵</div><h3>Thé Longrich</h3><p>Produit Longrich</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🌿</div><h3>Compléments alimentaires</h3><p>Différentes références</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🥤</div><h3>Gobelet Longrich</h3><p>Accessoire</p><div class="price">Prix à confirmer</div></div>
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Contact et partenariats</h2>
-  <p>Vous êtes une marque ou souhaitez collaborer avec ELYSEE ?</p>
-  <p>Contactez-nous pour toute demande.</p>
+<section class="section" id="patisserie">
+  <h2>Pâtisserie et gourmandises</h2>
+  <p class="intro">Des douceurs préparées pour vos envies.</p>
+
+  <div class="grid">
+    <div class="card"><div class="visual">🧃</div><h3>Jus naturels</h3><p>Des boissons aux fruits.</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🍪</div><h3>Biscuits</h3><p>Des biscuits gourmands.</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🥞</div><h3>Crêpes</h3><p>Des crêpes gourmandes.</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🍩</div><h3>Beignets</h3><p>Des beignets savoureux.</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🧁</div><h3>Cupcakes</h3><p>De délicieux petits gâteaux.</p><div class="price">Prix à confirmer</div></div>
+    <div class="card"><div class="visual">🎁</div><h3>Box Surprise Gourmandises</h3><p>Des coffrets sucrés personnalisés selon vos envies et votre budget.</p><div class="price">Sur demande</div></div>
+    <div class="card"><div class="visual">🥟</div><h3>Box Fast-Food</h3><p>Nems et pili-pili fourrés à la viande. Coffrets personnalisables.</p><div class="price">Sur demande</div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact et commandes</h2>
+  <p>Vous souhaitez connaître un prix ou personnaliser une box ?</p>
+  <p>Les informations de commande seront bientôt disponibles.</p>
+  <p>Merci de votre confiance et bienvenue chez ELYSEE.</p>
 </section>
 
 <footer>
-  <p>© 2026 ELYSEE - Tous droits réservés</p>
+  © 2026 ELYSEE — Élégance • Qualité • Excellence
 </footer>
 
 </body>
