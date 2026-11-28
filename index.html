@@ -2,197 +2,248 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELYSEE | Boutique & Gourmandises</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELYSEE | Boutique & Gourmandises</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #101010;
-      color: #f5f0e5;
-      line-height: 1.6;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    header {
-      background: #080808;
-      text-align: center;
-      padding: 35px 15px;
-      border-bottom: 2px solid #c9a64b;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: #f5f0e5;
+  line-height: 1.6;
+}
 
-    header h1 {
-      color: #d6b45b;
-      font-size: 42px;
-      letter-spacing: 7px;
-    }
+header {
+  background: #080808;
+  text-align: center;
+  padding: 35px 15px;
+  border-bottom: 2px solid #c9a64b;
+}
 
-    header p {
-      color: #eee0b5;
-      margin-top: 8px;
-    }
+header h1 {
+  color: #d6b45b;
+  font-size: 42px;
+  letter-spacing: 7px;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 22px;
-      padding: 17px 10px;
-      background: #171717;
-    }
+header p {
+  color: #eee0b5;
+  margin-top: 8px;
+}
 
-    nav a {
-      color: #d6b45b;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 17px 10px;
+  background: #171717;
+}
 
-    nav a:hover {
-      color: white;
-    }
+nav a {
+  color: #d6b45b;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .hero {
-      text-align: center;
-      padding: 75px 20px;
-      background: linear-gradient(135deg, #171717, #302611);
-    }
+nav a:hover {
+  color: white;
+}
 
-    .hero h2 {
-      color: #e1c36d;
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(135deg, #171717, #302611);
+}
 
-    .hero p {
-      max-width: 650px;
-      margin: auto;
-    }
+.hero h2 {
+  color: #e1c36d;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
 
-    .section {
-      padding: 45px 7%;
-    }
+.hero p {
+  max-width: 650px;
+  margin: auto;
+}
 
-    .section h2 {
-      color: #d6b45b;
-      text-align: center;
-      font-size: 27px;
-      margin-bottom: 12px;
-    }
+.section {
+  padding: 45px 7%;
+}
 
-    .intro {
-      text-align: center;
-      color: #c7c0b2;
-      margin-bottom: 28px;
-    }
+.section h2 {
+  color: #d6b45b;
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 20px;
-    }
+.intro {
+  text-align: center;
+  color: #c7c0b2;
+  margin-bottom: 28px;
+}
 
-    .card {
-      background: #1c1c1c;
-      border: 1px solid #806a34;
-      border-radius: 12px;
-      padding: 22px;
-      text-align: center;
-      transition: 0.3s;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #e1c36d;
-    }
+.card {
+  background: #1c1c1c;
+  border: 1px solid #806a34;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  transition: 0.3s;
+}
 
-    .visual {
-      background: #292318;
-      border-radius: 9px;
-      min-height: 110px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #e1c36d;
+}
 
-    .card h3 {
-      color: #e1c36d;
-      margin-bottom: 8px;
-      font-size: 17px;
-    }
+.visual {
+  background: #292318;
+  border-radius: 9px;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
 
-    .card p {
-      color: #d2ccbf;
-      font-size: 14px;
-    }
+.card h3 {
+  color: #e1c36d;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
 
-    .price {
-      color: #e1c36d;
-      font-weight: bold;
-      margin-top: 12px;
-    }
+.card p {
+  color: #d2ccbf;
+  font-size: 14px;
+}
 
-    .contact {
-      background: #1b1b1b;
-      text-align: center;
-      padding: 45px 20px;
-      border-top: 1px solid #806a34;
-    }
+.price {
+  color: #e1c36d;
+  font-weight: bold;
+  margin-top: 12px;
+}
 
-    .contact h2 {
-      color: #d6b45b;
-      margin-bottom: 12px;
-    }
+.contact {
+  background: #1b1b1b;
+  text-align: center;
+  padding: 45px 20px;
+  border-top: 1px solid #806a34;
+}
 
-    .whatsapp-button {
-      display: inline-block;
-      background: #d6b45b;
-      color: #080808;
-      padding: 13px 25px;
-      margin-top: 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+.contact h2 {
+  color: #d6b45b;
+  margin-bottom: 12px;
+}
 
-    .whatsapp-button:hover {
-      background: #f0d580;
-    }
+/* BOUTONS */
 
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      z-index: 1000;
-    }
+.whatsapp-button,
+.partner-button {
+  display: inline-block;
+  background: #d6b45b;
+  color: #080808;
+  padding: 13px 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #b9ad8c;
-      background: #080808;
-      font-size: 13px;
-    }
+.whatsapp-button:hover,
+.partner-button:hover {
+  background: #f0d580;
+}
 
-    @media(max-width: 600px) {
-      header h1 { font-size: 32px; }
-      .hero h2 { font-size: 25px; }
-      .section { padding: 35px 5%; }
-    }
-  </style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* PARTENARIATS */
+
+.partnership {
+  padding: 55px 7%;
+  text-align: center;
+  background: linear-gradient(135deg, #171717, #302611);
+  border-top: 2px solid #806a34;
+}
+
+.partnership h2 {
+  color: #e1c36d;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.partnership .description {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #d2ccbf;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.partner-card {
+  background: #1c1c1c;
+  border: 1px solid #806a34;
+  border-radius: 12px;
+  padding: 25px 18px;
+}
+
+.partner-card h3 {
+  color: #e1c36d;
+  margin-bottom: 10px;
+}
+
+.partner-card p {
+  color: #d2ccbf;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #b9ad8c;
+  background: #080808;
+  font-size: 13px;
+}
+
+@media(max-width: 600px) {
+  header h1 { font-size: 32px; }
+  .hero h2 { font-size: 25px; }
+  .section { padding: 35px 5%; }
+  .partnership { padding: 40px 5%; }
+}
+</style>
 </head>
 
 <body>
@@ -207,6 +258,7 @@
   <a href="#beaute">Beauté</a>
   <a href="#sante">Santé</a>
   <a href="#patisserie">Gourmandises</a>
+  <a href="#partenariats">Partenariats</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -263,6 +315,56 @@
   </div>
 </section>
 
+<!-- NOUVEL ESPACE PARTENARIATS -->
+
+<section class="partnership" id="partenariats">
+
+  <h2>Nos partenariats</h2>
+
+  <p class="description">
+    Construisons de belles collaborations ensemble.
+    ELYSEE est ouverte aux propositions de partenariats
+    avec les marques, les entreprises et les créateurs de contenu.
+  </p>
+
+  <div class="partner-grid">
+
+    <div class="partner-card">
+      <h3>Partenariats avec les marques</h3>
+      <p>
+        Vous représentez une marque et souhaitez collaborer
+        avec ELYSEE ? Présentez-nous votre proposition.
+      </p>
+    </div>
+
+    <div class="partner-card">
+      <h3>Créateurs de contenu</h3>
+      <p>
+        Vous souhaitez mettre en place une collaboration
+        pour faire connaître nos produits et nos créations ?
+        Contactez-nous.
+      </p>
+    </div>
+
+    <div class="partner-card">
+      <h3>Partenariats commerciaux</h3>
+      <p>
+        Vous avez une idée de collaboration commerciale ?
+        Nous sommes ouverts aux propositions sérieuses.
+      </p>
+    </div>
+
+  </div>
+
+  <a class="partner-button"
+     href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20proposer%20un%20partenariat."
+     target="_blank"
+     rel="noopener noreferrer">
+     Devenir partenaire
+  </a>
+
+</section>
+
 <section class="contact" id="contact">
   <h2>Contact et commandes</h2>
   <p>Vous souhaitez connaître un prix ou personnaliser une box ?</p>
@@ -270,11 +372,14 @@
 
   <a class="whatsapp-button"
      href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20passer%20une%20commande."
-     target="_blank">
+     target="_blank"
+     rel="noopener noreferrer">
      Commander sur WhatsApp
   </a>
 
-  <p style="margin-top:15px;">Merci de votre confiance et bienvenue chez ELYSEE.</p>
+  <p style="margin-top:15px;">
+    Merci de votre confiance et bienvenue chez ELYSEE.
+  </p>
 </section>
 
 <footer>
@@ -283,7 +388,8 @@
 
 <a class="whatsapp-float"
    href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20passer%20une%20commande."
-   target="_blank">
+   target="_blank"
+   rel="noopener noreferrer">
    WhatsApp
 </a>
 
