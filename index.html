@@ -2,396 +2,368 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELYSEE | Boutique & Gourmandises</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ELYSEE : boutique de beauté, santé, gourmandises et cadeaux personnalisés au Cameroun.">
+  <title>ELYSEE | Boutique & Partenariats</title>
+  <style>
+    :root {
+      --black: #11100e;
+      --gold: #d4af37;
+      --cream: #f8f4e9;
+      --white: #fff;
+    }
 
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #101010;
-  color: #f5f0e5;
-  line-height: 1.6;
-}
+    html { scroll-behavior: smooth; }
 
-header {
-  background: #080808;
-  text-align: center;
-  padding: 35px 15px;
-  border-bottom: 2px solid #c9a64b;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: #24211b;
+      line-height: 1.6;
+    }
 
-header h1 {
-  color: #d6b45b;
-  font-size: 42px;
-  letter-spacing: 7px;
-}
+    header {
+      background: var(--black);
+      color: var(--white);
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-header p {
-  color: #eee0b5;
-  margin-top: 8px;
-}
+    .logo {
+      color: var(--gold);
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
 
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 22px;
-  padding: 17px 10px;
-  background: #171717;
-}
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
 
-nav a {
-  color: #d6b45b;
-  text-decoration: none;
-  font-weight: bold;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
-nav a:hover {
-  color: white;
-}
+    nav a:hover { color: var(--gold); }
 
-.hero {
-  text-align: center;
-  padding: 75px 20px;
-  background: linear-gradient(135deg, #171717, #302611);
-}
+    .hero {
+      min-height: 420px;
+      background: linear-gradient(120deg, #11100e, #38301c);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 70px 20px;
+    }
 
-.hero h2 {
-  color: #e1c36d;
-  font-size: 32px;
-  margin-bottom: 15px;
-}
+    .hero h1 {
+      color: var(--gold);
+      font-size: clamp(38px, 7vw, 65px);
+      letter-spacing: 8px;
+    }
 
-.hero p {
-  max-width: 650px;
-  margin: auto;
-}
+    .hero p {
+      max-width: 650px;
+      margin: 18px auto 25px;
+      font-size: 18px;
+    }
 
-.section {
-  padding: 45px 7%;
-}
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #17140d;
+      padding: 12px 23px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
 
-.section h2 {
-  color: #d6b45b;
-  text-align: center;
-  font-size: 27px;
-  margin-bottom: 12px;
-}
+    .btn:hover { background: #f0d36b; }
 
-.intro {
-  text-align: center;
-  color: #c7c0b2;
-  margin-bottom: 28px;
-}
+    section { padding: 65px 7%; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 20px;
-}
+    .section-title {
+      text-align: center;
+      color: #9b791d;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
 
-.card {
-  background: #1c1c1c;
-  border: 1px solid #806a34;
-  border-radius: 12px;
-  padding: 22px;
-  text-align: center;
-  transition: 0.3s;
-}
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #e1c36d;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
 
-.visual {
-  background: #292318;
-  border-radius: 9px;
-  min-height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 42px;
-  margin-bottom: 15px;
-}
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 3px 14px #00000012;
+      border: 1px solid #eee4c9;
+    }
 
-.card h3 {
-  color: #e1c36d;
-  margin-bottom: 8px;
-  font-size: 17px;
-}
+    .card h3 {
+      color: #9b791d;
+      margin-bottom: 10px;
+    }
 
-.card p {
-  color: #d2ccbf;
-  font-size: 14px;
-}
+    .placeholder {
+      height: 150px;
+      background: #eee8d9;
+      color: #746b57;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
 
-.price {
-  color: #e1c36d;
-  font-weight: bold;
-  margin-top: 12px;
-}
+    .dark-section {
+      background: var(--black);
+      color: white;
+    }
 
-.contact {
-  background: #1b1b1b;
-  text-align: center;
-  padding: 45px 20px;
-  border-top: 1px solid #806a34;
-}
+    .dark-section .section-title { color: var(--gold); }
 
-.contact h2 {
-  color: #d6b45b;
-  margin-bottom: 12px;
-}
+    .payment-number {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--gold);
+      margin: 15px 0;
+      letter-spacing: 1px;
+    }
 
-/* BOUTONS */
+    .contact {
+      text-align: center;
+      background: #eee7d5;
+    }
 
-.whatsapp-button,
-.partner-button {
-  display: inline-block;
-  background: #d6b45b;
-  color: #080808;
-  padding: 13px 25px;
-  margin-top: 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    footer {
+      background: var(--black);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
 
-.whatsapp-button:hover,
-.partner-button:hover {
-  background: #f0d580;
-}
+    footer span { color: var(--gold); }
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 14px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 1000;
-}
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 12px #0004;
+      z-index: 10;
+    }
 
-/* PARTENARIATS */
-
-.partnership {
-  padding: 55px 7%;
-  text-align: center;
-  background: linear-gradient(135deg, #171717, #302611);
-  border-top: 2px solid #806a34;
-}
-
-.partnership h2 {
-  color: #e1c36d;
-  font-size: 28px;
-  margin-bottom: 18px;
-}
-
-.partnership .description {
-  max-width: 700px;
-  margin: 0 auto 30px;
-  color: #d2ccbf;
-}
-
-.partner-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 20px;
-  margin-bottom: 25px;
-}
-
-.partner-card {
-  background: #1c1c1c;
-  border: 1px solid #806a34;
-  border-radius: 12px;
-  padding: 25px 18px;
-}
-
-.partner-card h3 {
-  color: #e1c36d;
-  margin-bottom: 10px;
-}
-
-.partner-card p {
-  color: #d2ccbf;
-  font-size: 14px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #b9ad8c;
-  background: #080808;
-  font-size: 13px;
-}
-
-@media(max-width: 600px) {
-  header h1 { font-size: 32px; }
-  .hero h2 { font-size: 25px; }
-  .section { padding: 35px 5%; }
-  .partnership { padding: 40px 5%; }
-}
-</style>
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; }
+      .hero { min-height: 350px; }
+      section { padding: 48px 5%; }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>ELYSEE</h1>
-  <p>Élégance • Qualité • Excellence</p>
-</header>
+  <header>
+    <div class="logo">ELYSEE</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#beaute">Beauté</a>
+      <a href="#sante">Santé</a>
+      <a href="#gourmandises">Gourmandises</a>
+      <a href="#paiement">Paiement</a>
+      <a href="#partenariats">Partenariats</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#beaute">Beauté</a>
-  <a href="#sante">Santé</a>
-  <a href="#patisserie">Gourmandises</a>
-  <a href="#partenariats">Partenariats</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <main>
+    <section class="hero" id="accueil">
+      <h1>ELYSEE</h1>
+      <p>Le plaisir de choisir, la joie d'offrir. Découvrez notre univers de beauté, de bien-être et de gourmandises.</p>
+      <a class="btn" href="#boutique">Découvrir la boutique</a>
+      <a class="btn" href="#partenariats">Devenir partenaire</a>
+    </section>
 
-<section class="hero" id="accueil">
-  <h2>Bienvenue chez ELYSEE</h2>
-  <p>
-    Découvrez un univers où beauté, bien-être et gourmandise
-    se rencontrent. Des produits sélectionnés et des créations
-    gourmandes pour vous faire plaisir.
-  </p>
-</section>
-
-<section class="section" id="beaute">
-  <h2>Beauté et soins</h2>
-  <p class="intro">Découvrez notre sélection de produits Longrich.</p>
-
-  <div class="grid">
-    <div class="card"><div class="visual">🌸</div><h3>Serviettes hygiéniques</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🧴</div><h3>Crème pour les mains</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🪥</div><h3>Dentifrice</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🪥</div><h3>Brosse à dents</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🧼</div><h3>Savon noir</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">✨</div><h3>Anti-transpirant</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🧴</div><h3>Snake Oil</h3><p>Huile de serpent Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🧴</div><h3>Produit au placenta</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">💧</div><h3>Multi Action Floral Water</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">👶</div><h3>Poudre pour bébé</h3><p>Longrich</p><div class="price">Prix à confirmer</div></div>
-  </div>
-</section>
-
-<section class="section" id="sante">
-  <h2>Santé et bien-être</h2>
-  <p class="intro">Retrouvez notre sélection Longrich.</p>
-
-  <div class="grid">
-    <div class="card"><div class="visual">🍵</div><h3>Thé Longrich</h3><p>Produit Longrich</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🌿</div><h3>Compléments alimentaires</h3><p>Différentes références</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🥤</div><h3>Gobelet Longrich</h3><p>Accessoire</p><div class="price">Prix à confirmer</div></div>
-  </div>
-</section>
-
-<section class="section" id="patisserie">
-  <h2>Pâtisserie et gourmandises</h2>
-  <p class="intro">Des douceurs préparées pour vos envies.</p>
-
-  <div class="grid">
-    <div class="card"><div class="visual">🧃</div><h3>Jus naturels</h3><p>Des boissons aux fruits.</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🍪</div><h3>Biscuits</h3><p>Des biscuits gourmands.</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🥞</div><h3>Crêpes</h3><p>Des crêpes gourmandes.</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🍩</div><h3>Beignets</h3><p>Des beignets savoureux.</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🧁</div><h3>Cupcakes</h3><p>De délicieux petits gâteaux.</p><div class="price">Prix à confirmer</div></div>
-    <div class="card"><div class="visual">🎁</div><h3>Box Surprise Gourmandises</h3><p>Des coffrets sucrés personnalisés selon vos envies et votre budget.</p><div class="price">Sur demande</div></div>
-    <div class="card"><div class="visual">🥟</div><h3>Box Fast-Food</h3><p>Nems et pili-pili fourrés à la viande. Coffrets personnalisables.</p><div class="price">Sur demande</div></div>
-  </div>
-</section>
-
-<!-- NOUVEL ESPACE PARTENARIATS -->
-
-<section class="partnership" id="partenariats">
-
-  <h2>Nos partenariats</h2>
-
-  <p class="description">
-    Construisons de belles collaborations ensemble.
-    ELYSEE est ouverte aux propositions de partenariats
-    avec les marques, les entreprises et les créateurs de contenu.
-  </p>
-
-  <div class="partner-grid">
-
-    <div class="partner-card">
-      <h3>Partenariats avec les marques</h3>
-      <p>
-        Vous représentez une marque et souhaitez collaborer
-        avec ELYSEE ? Présentez-nous votre proposition.
+    <section id="boutique">
+      <h2 class="section-title">Bienvenue chez ELYSEE</h2>
+      <p class="section-intro">
+        Une boutique qui rassemble plusieurs univers pour vous faire plaisir
+        et faire plaisir à ceux que vous aimez.
       </p>
-    </div>
+    </section>
 
-    <div class="partner-card">
-      <h3>Créateurs de contenu</h3>
-      <p>
-        Vous souhaitez mettre en place une collaboration
-        pour faire connaître nos produits et nos créations ?
-        Contactez-nous.
+    <section id="beaute">
+      <h2 class="section-title">Beauté</h2>
+      <p class="section-intro">Découvrez notre sélection de produits de beauté et de soins.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="placeholder">Image du produit à ajouter</div>
+          <h3>Soins du corps</h3>
+          <p>Des produits pour prendre soin de vous.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image du produit à ajouter</div>
+          <h3>Accessoires beauté</h3>
+          <p>Des accessoires pour votre routine beauté.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image du produit à ajouter</div>
+          <h3>Parfums et gloss</h3>
+          <p>De petites attentions pour vous faire plaisir.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sante" class="dark-section">
+      <h2 class="section-title">Santé et bien-être</h2>
+      <p class="section-intro">Retrouvez une sélection de produits Longrich et d'articles de bien-être.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="placeholder">Image du produit à ajouter</div>
+          <h3>Hygiène</h3>
+          <p>Savon noir, dentifrice, brosse à dents et serviettes hygiéniques.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image du produit à ajouter</div>
+          <h3>Soins</h3>
+          <p>Crème pour les mains, huiles et autres produits de soin.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image du produit à ajouter</div>
+          <h3>Bien-être</h3>
+          <p>Anti-transpirant et Multi Action Floral Water.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gourmandises">
+      <h2 class="section-title">Gourmandises et cadeaux</h2>
+      <p class="section-intro">
+        Des douceurs et des surprises préparées avec attention.
+        Nos box surprises personnalisées sont réalisées selon le budget du client.
       </p>
-    </div>
+      <div class="grid">
+        <article class="card">
+          <div class="placeholder">Image à ajouter</div>
+          <h3>Box gourmandes</h3>
+          <p>Biscuits, chocolats et petites douceurs.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image à ajouter</div>
+          <h3>Box surprises</h3>
+          <p>Des cadeaux personnalisés selon votre budget.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image à ajouter</div>
+          <h3>Box fast-food</h3>
+          <p>Nems, pili-pili et viande à l'intérieur.</p>
+        </article>
+        <article class="card">
+          <div class="placeholder">Image à ajouter</div>
+          <h3>Jus et pâtisseries</h3>
+          <p>Des gourmandises pour vos envies et occasions.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="partner-card">
-      <h3>Partenariats commerciaux</h3>
-      <p>
-        Vous avez une idée de collaboration commerciale ?
-        Nous sommes ouverts aux propositions sérieuses.
+    <section id="paiement" class="dark-section">
+      <h2 class="section-title">Paiement Orange Money</h2>
+      <p class="section-intro">
+        Pour régler votre commande, contactez-nous sur WhatsApp afin de confirmer
+        la disponibilité des produits et de recevoir les instructions de paiement.
       </p>
-    </div>
+      <div class="card">
+        <h3>Orange Money</h3>
+        <p>Numéro de paiement :</p>
+        <div class="payment-number">+237 697 962 210</div>
+        <p>Nom du bénéficiaire : ELYSEE</p>
+        <p>Veuillez confirmer votre commande avec nous avant tout transfert.</p>
+        <a class="btn" href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20confirmer%20ma%20commande%20et%20recevoir%20les%20instructions%20de%20paiement.">
+          Confirmer sur WhatsApp
+        </a>
+      </div>
+    </section>
 
-  </div>
+    <section id="partenariats">
+      <h2 class="section-title">Partenariats</h2>
+      <p class="section-intro">
+        ELYSEE est ouvert aux collaborations et aux belles opportunités.
+        Construisons ensemble des projets intéressants.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Marques</h3>
+          <p>Vous représentez une marque et souhaitez collaborer avec ELYSEE ? Parlons-en.</p>
+        </article>
+        <article class="card">
+          <h3>Créateurs de contenu</h3>
+          <p>Vous créez du contenu et souhaitez réaliser une collaboration ? Contactez-nous.</p>
+        </article>
+        <article class="card">
+          <h3>Partenariats commerciaux</h3>
+          <p>Vous avez une proposition commerciale ? Nous sommes à votre écoute.</p>
+        </article>
+      </div>
+      <div style="text-align:center; margin-top:30px;">
+        <a class="btn" href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20devenir%20partenaire.">
+          Devenir partenaire
+        </a>
+      </div>
+    </section>
 
-  <a class="partner-button"
-     href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20proposer%20un%20partenariat."
-     target="_blank"
-     rel="noopener noreferrer">
-     Devenir partenaire
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contactez ELYSEE</h2>
+      <p>Une question, une commande ou une proposition ? Écrivez-nous directement.</p>
+      <p class="payment-number">+237 697 962 210</p>
+      <a class="btn" href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20avoir%20des%20informations.">
+        Nous contacter sur WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 <span>ELYSEE</span> - Tous droits réservés.</p>
+    <p>Beauté · Bien-être · Gourmandises</p>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20avoir%20des%20informations."
+     target="_blank" rel="noopener noreferrer">
+    WhatsApp
   </a>
-
-</section>
-
-<section class="contact" id="contact">
-  <h2>Contact et commandes</h2>
-  <p>Vous souhaitez connaître un prix ou personnaliser une box ?</p>
-  <p>Contactez directement ELYSEE sur WhatsApp.</p>
-
-  <a class="whatsapp-button"
-     href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20passer%20une%20commande."
-     target="_blank"
-     rel="noopener noreferrer">
-     Commander sur WhatsApp
-  </a>
-
-  <p style="margin-top:15px;">
-    Merci de votre confiance et bienvenue chez ELYSEE.
-  </p>
-</section>
-
-<footer>
-  © 2026 ELYSEE — Élégance • Qualité • Excellence
-</footer>
-
-<a class="whatsapp-float"
-   href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20passer%20une%20commande."
-   target="_blank"
-   rel="noopener noreferrer">
-   WhatsApp
-</a>
 
 </body>
 </html>
