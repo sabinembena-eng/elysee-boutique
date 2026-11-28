@@ -150,6 +150,35 @@
       margin-bottom: 12px;
     }
 
+    .whatsapp-button {
+      display: inline-block;
+      background: #d6b45b;
+      color: #080808;
+      padding: 13px 25px;
+      margin-top: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background: #f0d580;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -237,13 +266,26 @@
 <section class="contact" id="contact">
   <h2>Contact et commandes</h2>
   <p>Vous souhaitez connaître un prix ou personnaliser une box ?</p>
-  <p>Les informations de commande seront bientôt disponibles.</p>
-  <p>Merci de votre confiance et bienvenue chez ELYSEE.</p>
+  <p>Contactez directement ELYSEE sur WhatsApp.</p>
+
+  <a class="whatsapp-button"
+     href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20passer%20une%20commande."
+     target="_blank">
+     Commander sur WhatsApp
+  </a>
+
+  <p style="margin-top:15px;">Merci de votre confiance et bienvenue chez ELYSEE.</p>
 </section>
 
 <footer>
   © 2026 ELYSEE — Élégance • Qualité • Excellence
 </footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/237697962210?text=Bonjour%20ELYSEE%2C%20je%20souhaite%20passer%20une%20commande."
+   target="_blank">
+   WhatsApp
+</a>
 
 </body>
 </html>
